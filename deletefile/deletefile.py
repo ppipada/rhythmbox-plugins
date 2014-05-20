@@ -20,10 +20,10 @@
 
 from gi.repository import GObject, RB, Peas, GLib, Gdk, Notify
 from Xlib import display, X, error
-from urlparse import urlparse
+from urllib.parse import urlparse
 import os
 import Xlib
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 Gdk.threads_init()
 
@@ -120,7 +120,7 @@ class DeleteFilePlugin(GObject.Object, Peas.Activatable):
     if uri.scheme != 'file':
       return
 
-    fPath = urllib.unquote(uri.path)
+    fPath = urllib.parse.unquote(uri.path)
     notification = Notify.Notification.new('Rhythmbox', os.path.basename(fPath), 'user-trash-full')
     notification.show()
     try:

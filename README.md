@@ -1,4 +1,4 @@
-rhythmbox-plugins
-=================
+rhythmbox-deletefile-plugin
+===========================
 
-Rhythmbox plugins developed by me or borrowed from someone (which was not working)
+Rhythmbox delete current file plugin to work with python3 and rhythmbox > 3.0. Borrowed from https://github.com/wandenberg/rhythmbox-plugins/tree/master/deletefile

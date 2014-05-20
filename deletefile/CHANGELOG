@@ -1,3 +1,6 @@
+0.0.8
+- Migrated to python3 for rhythmbox3 using Ctrl+Shift+Del as key combination 
+
 0.0.7
 - Changing the key combination to Ctrl+period because Ctrl+'/' is taken by
   rhythmbox

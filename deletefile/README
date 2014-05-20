@@ -5,10 +5,10 @@ stuff when you encounter it the first time. :)
 
 Install:
 1. Install the following packages (names taken from Ubuntu):
-     - python-xlib (python module)
+     - python3-xlib (python module)
      - send2trash (available from pypi)
      In Ubuntu, you can execute the following command:
-     sudo apt-get install python-pip python-xlib && sudo pip install send2trash
+     sudo apt-get install python-pip python3-xlib && sudo pip install send2trash
 2. Copy this directory into ~/.local/share/rhythmbox/plugins
 
 Structure should then look like this:
@@ -22,32 +22,6 @@ Structure should then look like this:
 4. Go to Edit -> Plugins -> enable "Delete current song from harddisk"
 
 Usage:
-If you ever find song disgusting, hit Ctrl+'.' and it will
+If you ever find song disgusting, hit Ctrl+Shift+Del and it will
 get deleted (moved to trash bin).
     
-Configuring:
-To change the hotkey, run xbindkeys -k (install xbindkeys first) and set the
-relevant keysyms in deletefile.py.
-
-    Sample:
-    1. Open terminal
-    1. Execute xbindkeys -k
-    2. Press Ctrl+'.'
-    3. xbindkeys prints:
-        "NoCommand"
-            m:0x14 + c:61
-            Ctrl + .
-    4. open ~/.local/share/rhythmbox/plugins/deletefile/deletefile.py
-    5. change relevant fields to:
-        # Ctrl+'.'
-        delete_key = 61
-        delete_mask = 0x14
-    6. Save, restart rhythmbox
-
-    Note: You could also edit deletefile.plugin to print the new hotkey in
-    the description. :)
-
-    Note: Ctrl + '.' doesn't always work with xbindkeys. If so, first get the
-    keysym for the key ('.'), and then get the keysym for the modifier (Ctrl)
-    in two steps
-
