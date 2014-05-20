@@ -4,6 +4,6 @@ Module=deletefile
 IAge=2
 Name=Delete current song from harddisk
 Description=Deletes the current song when Ctrl+Shift+'Delete' is pressed.
-Authors=gsubes@gmail.com, mall.shikhar.in@gmail.com, panpipada@gmail.com
+Authors=gsubes@gmail.com, mall.shikhar.in@gmail.com, ppipada@gmail.com
 Copyright=Copyright © 2012 subes, shrekster
 Website=https://github.com/ppipada/rhythmbox-plugins
